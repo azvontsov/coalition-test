@@ -90,6 +90,7 @@
 }
 .history img {
   background-size: cover;
+
   width: 100%;
   z-index: 1;
   position: absolute;
@@ -135,6 +136,53 @@
   position: absolute;
   font-family: "Roboto Flex", serif;
 }
+.white {
+  background-color: #fff;
+  height: 180px;
+  display: flex;
+  align-items: center;
+}
+.text-container2 {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 180px;
+  /* width: 100%; */ */
+  z-index: 5;
+}
+.title-box2 {
+  /* background-color: gold; */
+  width: 235px;
+  height: 125px;
+  position: relative;
+}
+.title2 {
+  font-size: 8rem;
+  font-weight: 500;
+  letter-spacing: -5px;
+  opacity: 0.5;
+  bottom: -20px;
+  position: absolute;
+  z-index: 5;
+}
+.subtitle2 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+  top: 45px;
+  left: 125px;
+  position: absolute;
+  z-index: 5;
+  color: #414f6b;
+}
+.parag2 {
+  top: 180px;
+  left: 70px;
+  width: 80%;
+  font-family: "Roboto Flex", serif;
+}
 
 @media (max-width: 768px) {
   .title-box {
@@ -152,6 +200,21 @@
   .parag {
     color: #fff;
   }
+  .title-box2 {
+    top: 0px;
+  }
+  .title2 {
+    font-size: 6rem;
+    bottom: -20px;
+  }
+  .subtitle2 {
+    font-size: 1.5rem;
+    top: 67px;
+    left: 83px;
+  }
+  .parag2 {
+
+  }
 }
 @media (max-width: 576px) {
   .parag {
@@ -160,8 +223,7 @@
   }
 }
 
-.test {
-  background-color: gold;
+.hist {
   background-image: url("./assets/img/history.png");
   background-size: cover;
   width: 100%;
@@ -231,4 +293,28 @@
 .carousel-inner .carousel-item-end,
 .carousel-inner .carousel-item-start {
   transform: translateX(0);
+}
+.tabs-stripe{
+  background-color: #414f6b;
+  height: 50px;
+  z-index: -1;
+}
+.tabs {
+  /* background-color: #414f6b; */
+
+  display: flex;
+  flex-direction: row;
+}
+.tabs button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 5px 10px;
+}
+.tabs button:hover {
+  border: none;
+  background-color: white;
+  opacity: 0.5;
+  color: #414f6b;
+
 }

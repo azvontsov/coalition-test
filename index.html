@@ -63,7 +63,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link text-white text-decoration-underline fst-italic"
-                  href="team.html"
+                  href="#climb"
                   >02. TEAM</a
                 >
               </li>
@@ -75,8 +75,8 @@
       <img class="phrase" src="./assets/img/phrase.png" alt="" />
       <img class="mountains" src="./assets/img/mountains .png" alt="" />
     </section>
-    <!-- TEST -->
-    <section class="test">
+    <!-- HISTORY -->
+    <section class="hist" id="history">
       <nav class="navbar navbar-expand-md navbar-dark bg-white py-3">
         <div class="container">
           <a class="navbar-brand" href="#">
@@ -243,7 +243,80 @@
         });
       </script>
     </section>
+    <!-- CLIMB -->
+    <section id="climb">
+      <div class="white">
+        <div class="container">
+          <div class="text-container2">
+            <div class="title-box2">
+              <div class="title2">02.</div>
+              <div class="subtitle2">CLIMB</div>
+            </div>
+            <p class="parag2">
+              Cras scelerisque id quam sed dignissim Pellentesque urna nunc,
+              gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit
+              dignissim tortor nec congue.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ACCORDEON TABS -->
 
+    <div class="accordion" id="accordionExample">
+      <div class="tabs-stripe">
+        <div class="container">
+          <div class="tabs">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                MOUNTAIN 1
+              </button>
+            </h2>
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                MOUNTAIN 2
+              </button>
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="collapseOne"
+        class="accordion-collapse collapse show"
+        aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <img src="./assets/img/tab1.png" alt="" />
+        </div>
+      </div>
+
+      <div
+        id="collapseTwo"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingTwo"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <img src="./assets/img/tab2.png" alt="" />
+        </div>
+      </div>
+    </div>
     <!-- Footer -->
     <footer class="p-5 bg-dark text-white text-center position-relative">
       <div class="container">
