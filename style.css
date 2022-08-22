@@ -212,9 +212,7 @@
     top: 67px;
     left: 83px;
   }
-  .parag2 {
-
-  }
+  
 }
 @media (max-width: 576px) {
   .parag {
@@ -321,11 +319,44 @@
 .accordion-body{
   margin: 0;
   padding: 0;
-
+  position: relative;
 }
 .accordion-body img{
   margin: 0;
   padding: 0;
   object-fit: cover;
   width: 100%;
+
 }
+.white-box {
+  background-color: #fff;
+ 
+  position: absolute;
+  top: 10%;
+  /* opacity: 0.5; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: .7rem 2rem;
+  z-index: 2;
+}
+.white-box-title {
+  color: #414f6b;
+  top: 10%;
+  font-size: 2rem;
+  z-index: 3;
+}
+.white-box-subtitle li {
+
+  font-size: 1rem;
+  font-family: "Roboto Flex", serif;
+  list-style: none;
+  z-index: 3;
+}
+@media (max-width: 576px) {
+  .white-box  {
+  transform: scale(0.7);
+  top: -10%;
+  }
+}
+
