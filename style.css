@@ -359,4 +359,13 @@
   top: -10%;
   }
 }
+.footer {
+  background-color: #414f6b;
+}
+.footer-text {
+  font-family: "Roboto Slab", serif;
+  opacity: 0.3;
+font-weight: bold;
+  font-size: .8rem;
+}
 
