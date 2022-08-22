@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Flex:opsz@8..144&family=Roboto+Slab:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  font-family: "Oswald", sans-serif;
+}
+.hero {
+  overflow: hidden;
+  position: relative;
+}
+
+.sky {
+  background-size: cover;
+  width: 100%;
+  top: 0%;
+  z-index: -1;
+  position: absolute;
+}
+.mountains {
+  background-size: cover;
+  width: 100%;
+  z-index: 10;
+  position: sticky;
+}
+.phrase {
+  position: absolute;
+  left: 38%;
+  top: 40%;
+  z-index: 1;
+  font-family: "Roboto Slab", serif;
+}
+
+@media (max-width: 2000px) {
+  .phrase {
+    position: absolute;
+    left: 33%;
+    top: 38%;
+  }
+}
+@media (max-width: 1600px) {
+  .phrase {
+    position: absolute;
+    left: 28%;
+    top: 34%;
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 1200px) {
+  .phrase {
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 992px) {
+  .phrase {
+    position: absolute;
+    left: 20%;
+    top: 28%;
+    transform: scale(0.5);
+  }
+}
+@media (max-width: 768px) {
+  .phrase {
+    position: absolute;
+    left: 12%;
+    top: 20%;
+    transform: scale(0.4);
+  }
+}
+@media (max-width: 576px) {
+  .phrase {
+    position: absolute;
+    left: -10%;
+    top: 10%;
+    transform: scale(0.3);
+  }
+}
+
+.history section {
+  background-image: url("./assets/img/history.png");
+}
+
+.mini-logo {
+  color: #414f6b;
+}
+
+.history {
+  position: relative;
+}
+.history img {
+  background-size: cover;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+}
+
+.text-container {
+  /* background-color: gold; */
+  width: 70%;
+  height: 260px;
+  position: absolute;
+  z-index: 5;
+}
+
+.title-box {
+  /* background-color: gold; */
+  width: 235px;
+  height: 125px;
+  top: 50px;
+  position: absolute;
+}
+.title {
+  font-size: 8rem;
+  font-weight: 500;
+  letter-spacing: -5px;
+  opacity: 0.5;
+  bottom: -20px;
+  position: absolute;
+  z-index: 5;
+}
+.subtitle {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+  opacity: 0.7;
+  top: 45px;
+  left: 113px;
+  position: absolute;
+  z-index: 5;
+}
+.parag {
+  top: 180px;
+  left: 70px;
+  position: absolute;
+  font-family: "Roboto Flex", serif;
+}
+
+@media (max-width: 768px) {
+  .title-box {
+    top: 0px;
+  }
+  .title {
+    font-size: 6rem;
+    bottom: -20px;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+    top: 67px;
+    left: 83px;
+  }
+  .parag {
+    color: #fff;
+  }
+}
+@media (max-width: 576px) {
+  .parag {
+    color: #fff;
+    font-size: 0.8rem;
+  }
+}
